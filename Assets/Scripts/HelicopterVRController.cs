@@ -36,7 +36,7 @@ public class HelicopterVRController : MonoBehaviour
     public SteamVR_Action_Boolean liftUpAction = SteamVR_Actions.default_Teleport;
 
     [Tooltip("Action to re-center the controller's neutral position.")]
-    public SteamVR_Action_Boolean recenterAction = SteamVR_Actions.default_JoystickClick;
+    //public SteamVR_Action_Boolean recenterAction = SteamVR_Actions.default_JoystickClick;
 
     [Header("Motion Control Settings")]
     [Tooltip("How far (in meters) you move the controller for 100% thrust.")]
