@@ -39,7 +39,6 @@ public class HelicopterVRController : MonoBehaviour
     //public SteamVR_Action_Boolean recenterAction = SteamVR_Actions.default_JoystickClick;
 
     [Header("Motion Control Settings")]
-    [Tooltip("How far (in meters) you move the controller for 100% thrust.")]
     public float maxMoveDistance = 0.5f; // 50cm
 
     [Tooltip("Movement deadzone (in meters).")]
@@ -76,10 +75,10 @@ public class HelicopterVRController : MonoBehaviour
     {
         // --- 1. CHECK FOR RE-CENTER ---
         // Allow the user to re-center by clicking the joystick
-        if (recenterAction.GetStateDown(controlHand))
-        {
-            RecenterController();
-        }
+        // if (recenterAction.GetStateDown(controlHand))
+        // {
+        //     RecenterController();
+        // }
 
         // --- 2. GET CURRENT POSE INPUT ---
         Vector3 currentPosition = poseAction.GetLocalPosition(controlHand);
